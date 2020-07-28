@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_no_ar"
+            android:icon="@drawable/music_note"
+            android:title="No Ar" />
+        <item
+            android:id="@+id/nav_a_radio"
+            android:icon="@drawable/amplifier"
+            android:title="A rádio" />
+        <item
+            android:id="@+id/nav_programacao"
+            android:icon="@drawable/wunderlist"
+            android:title="Programação" />
+    </group>
+
+    <item android:title="Sobre">
+        <menu>
+
+            <item
+                android:id="@+id/nav_sobre"
+                android:icon="@drawable/information"
+                android:title="Quem Fez" />
+
+            <item
+                android:id="@+id/nav_contato"
+                android:icon="@drawable/email_open_outline"
+                android:title="Entrar em contato" />
+
+            <item
+                android:id="@+id/nav_policies"
+                android:icon="@drawable/ic_politica_privacidade"
+                android:title="Politicas de Privacidade" />
+
+        </menu>
+    </item>
+
+</menu>

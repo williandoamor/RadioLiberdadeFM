@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RadioLiberdadefm</string>
+
+    <string name="titulo_toolbar">Liberdade FM 87,9</string>
+    <string name="action_settings">Configurações</string>
+    <string name="Sobre"></string>
+    <string name="compartilhar"></string>
+    <string name="contato">Contato</string>
+    <string name="programacao">Programação</string>
+    <string name="no_ar">No Ar</string>
+    <string name="a_radio">A Rádio</string>
+    <string name="sobre_o_app">Sobre o aplicativo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>

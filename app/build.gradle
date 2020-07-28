@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://oss.sonatype.org/content/groups/public' }
+    maven { url "https://jitpack.io" }
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "br.com.loadti.radio.liberdadefm"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 13
+        versionName "2.8"
+        multiDexEnabled true
+
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86", "armeabi", "mips"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    /*Opcao para compilar o MultDex no Android 4.4*/
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    /*Constraint-Layout*/
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+    /*Modulo do Appodel*/
+    compile project(':cheetah-mobile-3.4.7')
+
+    /*A documentacao do Appodel manda usar toda a api o google GSM
+    *mas somente o map, location e ads e o suficiente
+    * */
+    //compile 'com.google.android.gms:play-services-location:8.3.0'
+   // compile 'com.google.android.gms:play-services-maps:8.3.0'
+    //compile 'com.google.android.gms:play-services-ads:8.3.0'
+    /*Navegaton Drawer*/
+    compile('com.mikepenz:materialdrawer:5.9.0@aar') {
+        transitive = true
+    }
+    /*Compila a lib na pasta libs*/
+    compile files('libs/aacdecoder-android-0.8.jar')
+    /*Biblioteca Multdex*/
+    compile 'com.android.support:multidex:1.0.1'
+    /*Google Play Service */
+    apply plugin: 'com.google.gms.google-services'
+    /*Firebase Adds*/
+    compile 'com.google.firebase:firebase-ads:10.0.1'
+    /*Firebase crash report*/
+    compile 'com.google.firebase:firebase-crash:9.6.1'
+
+}

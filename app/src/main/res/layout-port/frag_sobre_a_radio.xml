@@ -1,0 +1,46 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/branco"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context=".ContainerPrincipal">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="A Rádio Liberdade FM é uma emissora de Rádio Comunitária da Associação Comunitária Cidade – Cidade, autorizada pelo Ministério das Comunicações. Localizada em Três Pontas - MG - Bairro: Jardim Greewille."
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="No dia 9 de setembro de 1999 protocolamos na antiga Delegacia do Ministério das Comunicações em Belo Horizonte, o interesse para explorar o serviço de radiodifusão comunitária em nossa cidade. Foram quase 10 anos de luta para conseguirmos realizar este sonho. Sonho este, que se realizou graças ao apoio de algumas autoridades e é claro, com o apoio incondicional da comunidade trespontana."
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="A Rádio Liberdade FM iniciou suas atividades no dia 12 de outubro de 2008."
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+
+        <item name="colorControlNormal">@color/primaryColor</item>
+        <item name="colorControlActivated">@color/primaryDarkColor</item>
+        <item name="colorControlHighlight">@color/primaryDarkColor</item>
+
+        <item name="android:actionMenuTextColor">@color/branco</item>
+        <item name="android:actionBarSize">@dimen/abc_action_bar_default_height_material</item>
+
+
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="android:textColorPrimary">@color/skyblue</item>
+        <item name="colorAccent">@color/amarelo</item>
+    </style>
+
+    <style name="Toolbar" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">#3d3f94</item>
+        <item name="android:background">#A7CE44</item>
+    </style>
+
+    <!-- Texto com fonte 12 -->
+    <style name="texto12">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="texto12Negrito" parent="texto12">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Texto com fonte 14 -->
+    <style name="texto14">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="texto14Negrito" parent="texto14">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Toolbar_Popup" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:background">@color/primaryDarkColor</item>
+    </style>
+
+    <style name="CustomProgressBarHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="Theme.MyThemeBottom" parent="AppBaseTheme">
+        <item name="colorPrimary">#428C68</item>
+
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Notification bar event text -->
+    <style name="NotificationText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:color">#ffffff</item>
+    </style>
+
+    <!-- Notification bar actions -->
+    <style name="NotificationAction">
+        <item name="android:layout_width">@dimen/notification_action_width</item>
+        <item name="android:layout_height">@dimen/notification_action_height</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/notification_action_padding</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="NotificationAction.Previous" parent="@style/NotificationAction">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="NotificationAction.Play" parent="@style/NotificationAction">
+    </style>
+
+    <style name="NotificationAction.Next" parent="@style/NotificationAction">
+    </style>
+
+    <style name="NotificationAction.Collapse" parent="@style/NotificationAction">
+    </style>
+
+
+
+</resources>

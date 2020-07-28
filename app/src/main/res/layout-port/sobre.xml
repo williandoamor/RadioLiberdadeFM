@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".ContainerPrincipal">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/branco"
+        tools:context=".ContainerPrincipal">
+
+        <LinearLayout
+            android:id="@+id/laySeparador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb_main"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/logLoadTI"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/logo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layDesenvolvedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/laySeparador"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvnome_desenvolvedor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Aplicativo Criado e Desenvolvido"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvnome_desenvolvedor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=" por Willian Vitor do Amor."
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layContato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layDesenvolvedor"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvContato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Contato:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvContato1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Email: loadti@loadti.com.br"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
